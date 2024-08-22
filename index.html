@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio-consult-site-tailwind</title>
-</head>
-<body>
+
+    <!-- Font Awesome Cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Daisy Ui Cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind css script  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-bg":
+                "linear-gradient(0deg, rgb(255,255,255), rgba(255,255,255,0))",
+              "primary-bg-color": "rgb(171, 239, 95)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Area  -->
+    <header>
+      <div class="my-8 overflow-hidden">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start flex items-center">
+            <h1 class="text-3xl font-bold">
+              <img
+                src="./assets/up-right-light.png"
+                alt=""
+                class="inline-block max-w-10 mr-2"
+              />Rinterio
+            </h1>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end  ">
+            <div class="md-content hidden md:block items-center">
+              <i
+                class="fa-solid fa-magnifying-glass text-2xl p-4 rounded-lg"
+              ></i>
+              <i
+                class="fa-solid fa-cart-shopping text-2xl p-4 rounded-lg mr-3"
+              ></i>
+              <a
+                href="#"
+                class="text-3xl bg-primary-bg-color p-5 rounded-[32px] min-w-72"
+                >Book Consult
+                <img
+                  src="./assets/up-right-dark.png"
+                  alt=""
+                  class="inline-block max-w-10"
+              /></a>
+            </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     
-</body>
+  </body>
 </html>
