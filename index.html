@@ -33,6 +33,10 @@
               "primary-bg-color": "rgb(171, 239, 95)",
               "btn-bg": "rgba(171, 239, 95, 0.5)",
               "hero-bg": "rgb(244, 244, 244)",
+              "contact-btn-bg-color": "rgba(171, 239, 95, 0.2)",
+            },
+            backgroundImage: {
+              "contact-bg": "url(./assets/bg.jpg)",
             },
           },
         },
@@ -194,17 +198,19 @@
       </section>
 
       <section class="work_process py-28 bg-hero-bg">
-        <div class="content flex flex-col items-center gap-8 ">
-          <button class="btn btn-ghost text-left rounded-xl bg-white">
-            <i class="fa-solid fa-arrow-right "></i>
+        <div class="content flex flex-col items-center gap-8">
+          <button class="btn btn-ghost rounded-3xl bg-white">
+            <i class="fa-solid fa-arrow-right"></i>
             How we works
           </button>
-          <h2 class="text-5xl font-bold text-center" >Our Works Process</h2>
+          <h2 class="text-5xl font-bold text-center">Our Works Process</h2>
           <p class="max-w-screen-md text-center px-8">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
-          <div class="our_steps flex container mx-auto gap-6 flex-col md:flex-row">
+          <div
+            class="our_steps flex container mx-auto gap-6 flex-col md:flex-row"
+          >
             <div
               class="card card-compact bg-base-100 w-72 shadow-xl items-start mx-auto bg-pink-300 p-8"
             >
@@ -265,7 +271,32 @@
         </div>
       </section>
 
-
+      <section class="contact bg-[url('./assets/bg.jpg')] py-12 bg-no-repeat bg-cover">
+        <div class="container mx-auto">
+          <div
+            class="main_content max-w-screen-lg flex flex-col mx-auto items-center gap-8"
+          >
+            <button class="btn btn-ghost rounded-3xl bg-contact-btn-bg-color">
+              <i class="fa-solid fa-arrow-right"></i>
+              Let’s Connect
+            </button>
+            <h2 class="text-5xl font-bold text-center">Our Works Process</h2>
+            <p class="max-w-screen-md text-center px-8">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input type="text" name="" id="" placeholder="First Name *" class="px-6 py-5 rounded-[64px] ">
+              <input type="text" name="" id="" placeholder="Last Name *" class="px-6 py-5 rounded-[64px] ">
+              <input type="number" name="" id="" placeholder="Phone Number *" class="px-6 py-5 rounded-[64px] ">
+              <input type="email" name="" id="" placeholder="Enter Email *" class="px-6 py-5 rounded-[64px] ">
+              <textarea name="massage" id="" class="px-6 py-5 min-h-40 rounded-[32px] col-span-1 md:col-span-2" placeholder="Write Your message here"></textarea>
+              <a href=""class="px-6 py-5 rounded-[64px] col-span-1 md:col-span-2 bg-primary-bg-color text-center">Send Mail <img src="./assets/up-right-dark.png" alt="" class="w-8 inline-block"></a>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
