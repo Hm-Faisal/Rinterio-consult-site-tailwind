@@ -22,6 +22,14 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Google Font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind css script  -->
     <script>
       tailwind.config = {
@@ -34,6 +42,12 @@
               "btn-bg": "rgba(171, 239, 95, 0.5)",
               "hero-bg": "rgb(244, 244, 244)",
               "contact-btn-bg-color": "rgba(171, 239, 95, 0.2)",
+              "text-one-color": "rgb(73, 73, 73)",
+              "text-two-color": "rgb(115,115,115)",
+              "text-three-color": "rgb(33,33,33)",
+              "text-four-color": "rgb(160,160,160)",
+              "text-five-color": "rgb(28,28,28)",
+              "text-six-color": "rgb(233,233,233)",
             },
             backgroundImage: {
               "contact-bg": "url(./assets/bg.jpg)",
@@ -42,14 +56,21 @@
         },
       };
     </script>
+
+    <!-- Custom style  -->
+    <style>
+      .text-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="text-manrope">
     <!-- Header Area  -->
     <header>
       <div class="overflow-hidden">
         <div class="navbar bg-base-100">
           <div class="navbar-start flex items-center">
-            <h1 class="text-2xl font-bold">
+            <h1 class="text-2xl font-bold text-text-three-color">
               <img
                 src="./assets/up-right-light.png"
                 alt=""
@@ -58,8 +79,8 @@
             </h1>
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-base">
-              <li><a>Home</a></li>
+            <ul class="menu menu-horizontal px-1 text-base text-text-two-color">
+              <li class="text-text-one-color"><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
@@ -76,7 +97,7 @@
               ></i>
               <a
                 href="#"
-                class="text-xl bg-primary-bg-color px-5 py-3 rounded-[32px] min-w-72"
+                class="text-xl bg-primary-bg-color px-5 py-3 rounded-[32px] min-w-72 text-text-five-color"
                 >Book Consult
                 <img
                   src="./assets/up-right-dark.png"
@@ -125,16 +146,16 @@
           <div class="hero-content text-center">
             <div class="max-w-screen-lg">
               <img src="./assets/banner.png" alt="" class="block mx-auto" />
-              <h1 class="text-4xl md:text-5xl font-bold">
+              <h1 class="text-4xl md:text-5xl font-bold text-text-three-color">
                 A barn house of this design has a striking appearance
               </h1>
-              <p class="py-6">
+              <p class="py-6 text-text-one-color">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents, and large windows that flood the space with natural
                 light.
               </p>
-              <a class="btn bg-btn-bg rounded-3xl"
+              <a class="btn bg-btn-bg rounded-3xl text-text-three-color"
                 >View Details
                 <img src="./assets/up-right-light.png" alt="" class="max-w-8"
               /></a>
@@ -143,7 +164,7 @@
         </div>
       </section>
 
-      <section class="About_Area py-5 md:py-28 bg-hero-bg p-5 md:p-0">
+      <section class="About_Area py-5 md:py-28 bg-hero-bg p-5 md:p-0 text-center">
         <div
           class="relative flex md:container mx-auto flex-col md:flex-row gap-4"
         >
@@ -153,14 +174,16 @@
             <img src="./assets/Vector.png" alt="" />
           </div>
           <div class="text-content flex-1 flex-col gap-4 flex justify-start">
-            <button class="btn btn-ghost text-left w-36 rounded-xl bg-white">
+            <button
+              class="btn btn-ghost text-left w-36 rounded-xl bg-white text-text-one-color"
+            >
               <i class="fa-solid fa-arrow-right"></i>
               About Us
             </button>
-            <h2 class="text-5xl font-bold">
+            <h2 class="text-5xl font-bold text-text-three-color">
               We design thoughtful, liveable spaces
             </h2>
-            <p>
+            <p class="text-text-one-color">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
@@ -171,8 +194,8 @@
                 <img src="./assets/commercial.png" class="w-28" alt="Album" />
               </figure>
               <div class="card-body p-0">
-                <h2 class="card-title">Commercial</h2>
-                <p>
+                <h2 class="card-title text-text-one-color">Commercial</h2>
+                <p class="text-text-two-color text-left">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -183,8 +206,8 @@
                 <img src="./assets/residential.png" class="w-28" alt="Album" />
               </figure>
               <div class="card-body p-0">
-                <h2 class="card-title">Residential</h2>
-                <p>
+                <h2 class="card-title text-text-one-color">Residential</h2>
+                <p class="text-text-two-color text-left">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -199,12 +222,16 @@
 
       <section class="work_process py-28 bg-hero-bg">
         <div class="content flex flex-col items-center gap-8">
-          <button class="btn btn-ghost rounded-3xl bg-white">
+          <button
+            class="btn btn-ghost rounded-3xl bg-white text-text-one-color"
+          >
             <i class="fa-solid fa-arrow-right"></i>
             How we works
           </button>
-          <h2 class="text-5xl font-bold text-center">Our Works Process</h2>
-          <p class="max-w-screen-md text-center px-8">
+          <h2 class="text-5xl font-bold text-center text-text-three-color">
+            Our Works Process
+          </h2>
+          <p class="max-w-screen-md text-center px-8 text-text-one-color">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
@@ -218,8 +245,8 @@
                 <img src="./assets/concept.png" alt="Shoes" />
               </figure>
               <div class="card-body ml-[-1rem]">
-                <h2 class="card-title">Concept</h2>
-                <p>
+                <h2 class="card-title text-text-five-color">Concept</h2>
+                <p class="text-text-one-color">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -232,8 +259,8 @@
                 <img src="./assets/flow-chart.png" alt="Shoes" />
               </figure>
               <div class="card-body ml-[-1rem]">
-                <h2 class="card-title">Design Process</h2>
-                <p>
+                <h2 class="card-title text-text-five-color">Design Process</h2>
+                <p class="text-text-one-color">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -246,8 +273,8 @@
                 <img src="./assets/vision.png" alt="Shoes" />
               </figure>
               <div class="card-body ml-[-1rem]">
-                <h2 class="card-title">Supervision</h2>
-                <p>
+                <h2 class="card-title text-text-five-color">Supervision</h2>
+                <p class="text-text-one-color">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -260,8 +287,8 @@
                 <img src="./assets/budget-planning.png" alt="Shoes" />
               </figure>
               <div class="card-body ml-[-1rem]">
-                <h2 class="card-title">Budget Planning</h2>
-                <p>
+                <h2 class="card-title text-text-five-color">Budget Planning</h2>
+                <p class="text-text-one-color">
                   The barn house captivates with its blend of rustic charm and
                   modern.
                 </p>
@@ -271,28 +298,71 @@
         </div>
       </section>
 
-      <section class="contact bg-[url('./assets/bg.jpg')] py-12 bg-no-repeat bg-cover">
+      <section
+        class="contact bg-[url('./assets/bg.jpg')] py-12 bg-no-repeat bg-cover"
+      >
         <div class="container mx-auto">
           <div
             class="main_content max-w-screen-lg flex flex-col mx-auto items-center gap-8"
           >
-            <button class="btn btn-ghost rounded-3xl bg-contact-btn-bg-color">
+            <button
+              class="btn btn-ghost rounded-3xl bg-contact-btn-bg-color text-text-one-color"
+            >
               <i class="fa-solid fa-arrow-right"></i>
               Let’s Connect
             </button>
-            <h2 class="text-5xl font-bold text-center">Our Works Process</h2>
-            <p class="max-w-screen-md text-center px-8">
+            <h2 class="text-5xl font-bold text-center text-text-three-color">
+              Our Works Process
+            </h2>
+            <p class="max-w-screen-md text-center px-8 text-text-one-color">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, featuring weathered wood, sleek metal
               accents.
             </p>
             <form action="#" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input type="text" name="" id="" placeholder="First Name *" class="px-6 py-5 rounded-[64px] ">
-              <input type="text" name="" id="" placeholder="Last Name *" class="px-6 py-5 rounded-[64px] ">
-              <input type="number" name="" id="" placeholder="Phone Number *" class="px-6 py-5 rounded-[64px] ">
-              <input type="email" name="" id="" placeholder="Enter Email *" class="px-6 py-5 rounded-[64px] ">
-              <textarea name="massage" id="" class="px-6 py-5 min-h-40 rounded-[32px] col-span-1 md:col-span-2" placeholder="Write Your message here"></textarea>
-              <a href=""class="px-6 py-5 rounded-[64px] col-span-1 md:col-span-2 bg-primary-bg-color text-center">Send Mail <img src="./assets/up-right-dark.png" alt="" class="w-8 inline-block"></a>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="First Name *"
+                class="px-6 py-5 rounded-[64px] text-text-four-color"
+              />
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Last Name *"
+                class="px-6 py-5 rounded-[64px] text-text-four-color"
+              />
+              <input
+                type="number"
+                name=""
+                id=""
+                placeholder="Phone Number *"
+                class="px-6 py-5 rounded-[64px] text-text-four-color"
+              />
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter Email *"
+                class="px-6 py-5 rounded-[64px] text-text-four-color"
+              />
+              <textarea
+                name="massage"
+                id=""
+                class="px-6 py-5 min-h-40 rounded-[32px] col-span-1 md:col-span-2 text-text-four-color"
+                placeholder="Write Your message here"
+              ></textarea>
+              <a
+                href=""
+                class="px-6 py-5 rounded-[64px] col-span-1 md:col-span-2 bg-primary-bg-color text-center"
+                >Send Mail
+                <img
+                  src="./assets/up-right-dark.png"
+                  alt=""
+                  class="w-8 inline-block text-text-five-color"
+              /></a>
             </form>
           </div>
         </div>
@@ -300,21 +370,24 @@
     </main>
 
     <footer>
-      <footer class="footer footer-center bg-gray-950 text-primary-content p-10">
+      <footer
+        class="footer footer-center bg-gray-950 text-primary-content p-10"
+      >
         <aside>
           <h1 class="text-3xl font-bold">
             <img
               src="./assets/up-right-light.png"
               alt=""
-              class="inline-block max-w-10 mr-2"
+              class="inline-block max-w-10 mr-2 text-text-six-color"
             />Rinterio
           </h1>
-          <p class="max-w-screen-md text-base">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          <p class="max-w-screen-md text-base text-text-two-color">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </aside>
         <nav>
-          <ul class="block px-1 text-base">
+          <ul class="block px-1 text-base text-text-six-color">
             <li class="block mb-4 md:inline-block mr-4"><a>Home</a></li>
             <li class="block mb-4 md:inline-block mr-4"><a>Services</a></li>
             <li class="block mb-4 md:inline-block mr-4"><a>Portfolio</a></li>
@@ -324,14 +397,14 @@
         </nav>
         <div>
           <a
-                href="#"
-                class="text-xl bg-primary-bg-color px-5 py-2 rounded-[32px]  text-black"
-                >Book Consult
-                <img
-                  src="./assets/up-right-dark.png"
-                  alt=""
-                  class="inline-block max-w-10"
-              /></a>
+            href="#"
+            class="text-xl bg-primary-bg-color px-5 py-2 rounded-[32px] text-text-five-color"
+            >Book Consult
+            <img
+              src="./assets/up-right-dark.png"
+              alt=""
+              class="inline-block max-w-10"
+          /></a>
         </div>
       </footer>
     </footer>
